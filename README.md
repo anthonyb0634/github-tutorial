@@ -53,7 +53,7 @@ _by Anthony Baez_
 
 
 ---
-#### Vocabulary 
+### Vocabulary 
 1. **git**: a git command
 2. **git init** // initializes git in our directory for version control -- **only do this once at the beginning and know where you are.**
 3. **git add file.ext** // add the file(s) to the stage to be committed (_note: git add . adds the current/entire directory: all files that have changes_) will not add any deleted or rename files
