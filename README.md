@@ -34,7 +34,9 @@ _by Anthony Baez_
 
 ---
 ### Initial Setup
-
+1. If you are BRAND NEW to git and git hub start here! If you already have an account and can sign in start at 
+2. Lets Begin! Start by making a Github account by [clicking here](www.https://github.com). 
+3. Lets link that account to cloud 9 (click on the octocat logo when signing in) [Click here](c9.io/login).
 
 
 ---
