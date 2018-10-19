@@ -22,7 +22,15 @@ _by Anthony Baez_
 * Easily collaborate with other users on files.
 * Requires Git
 ##### Github Overveiw
-[github.com](www.github.com) 
+* [www.Github.com](www.github.com) 
+
+* Runs in the command line
+* Basic workflow
+  * inital repository
+  * OR start from someone elses repository 
+    * Fork/Clone/Push/Pull
+  * You can use this [website](www.github.com) to check and interact with your repositorys and changes.
+  
 
 ---
 ### Initial Setup
