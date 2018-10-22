@@ -99,16 +99,7 @@ follow the instructions
 
 ---
 ### Workflow & Commands
-
-
-
----
-### Rolling Back Changes
-
-
-
----
-### Vocabulary 
+##### Vocabulary 
 1. **git**: a git command
 2. **git init** // initializes git in our directory for version control -- **only do this once at the beginning and know where you are.**
 3. **git add file.ext** // add the file(s) to the stage to be committed (_note: git add . adds the current/entire directory: all files that have changes_) will not add any deleted or rename files
@@ -122,3 +113,12 @@ follow the instructions
 10. **pull**: bring any changes from the remote repo down to the local repo
 11. **push**: we are sending our commits from our local repo to our remote repo (up to the cloud: Github)
 12. **-u**: means “upstream.” This tells git to remember which remote repo & branch to push our changes to when we type git push in the future.
+
+
+
+---
+### Rolling Back Changes
+
+
+
+---
