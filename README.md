@@ -113,11 +113,9 @@ follow the instructions
 10. **pull**: bring any changes from the remote repo down to the local repo
 11. **push**: we are sending our commits from our local repo to our remote repo (up to the cloud: Github)
 12. **-u**: means “upstream.” This tells git to remember which remote repo & branch to push our changes to when we type git push in the future.
-
-
-
 ---
 ### Rolling Back Changes
+Messed up adding commiting or pushing?
 
 
 
