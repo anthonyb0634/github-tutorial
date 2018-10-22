@@ -34,13 +34,66 @@ _by Anthony Baez_
 
 ---
 ### Initial Setup
-1. If you are BRAND NEW to git and git hub start here! If you already have an account and can sign in start at 
+1. If you are BRAND NEW to git and git hub start here! If you already have an account and can sign in start at 3
 2. Lets Begin! Start by making a Github account by [clicking here](www.https://github.com). 
 3. Lets link that account to cloud 9 (click on the octocat logo when signing in) [Click here](c9.io/login).
-
+4. On the top right there should be a setting gear icon click on it and proceed to connected services. Click the green button that says connect.
+5. Hit the plus icon to create a new workspace.
+* Name the workspace **github-learning**
+* Description : Verson Control and collaboration
+* Team : click " Dont set a team for this workspace"
+* Template "Blank"
+6. Create a workspace
+7. If you see `.c9` click the gear icon and uncheck show hidden files.
 
 ---
+
+Follow the following directions
+
+Lets Setup your SSH key!
+* [Click Here](www.github.com) and sign in.
+* Click on the profile icon ( top right ).
+* Settings 
+* SSH and GPG ( left side bar ).
+* New SSH key.
+* TITLE : cloud9 ( recommended not to use caps ).
+* Switch to your cloud9 tab
+* gear icon ( top right ).
+* SSH key tab 
+* copy/paste the 2nd SSH key to github
+  * starts with ssh-rsa
+  * add SSH key
+* Go to cloud9
+* Open github-learning ide
+* type in `ssh -T git@github.com`
+* You should see `Hi <your username>! You've successfully authenticated, but GitHub does not provide shell access._
+`
+---
 ### Repository Setup
+Lets make our `first-repo`
+follow the instructions 
+* `cd ~/workspace` ( Always want to cd into workspace so you know where you are )
+* `mkdir first-repo` ( Notice how there are no spaces but instead a dash "-")
+* `cd first-repo` ( Always remember **cd into a file after you make it** )
+* `git init` ( **know where you are before git init** )
+GREAT!
+We now need a remote to push to 
+follow the instructions
+* [Click here](github.com)
+* click on the top right plus icon and create a new repository
+* Repository Name : first-repo
+  * THE NAMES ALWAYS NEED TO MATCH!
+* Create Repository 
+* Scroll down to 
+
+Lets make a README now!
+follow the instructions
+* `touch README.md`
+* open the README
+* add `this is my first repo`
+* save ( command + s )
+* add 
+* commit -m "create README"
 
 
 
