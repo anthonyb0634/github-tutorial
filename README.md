@@ -117,7 +117,7 @@ follow the instructions
 ### Rolling Back Changes
 Messed up adding commiting or pushing?
 1. Use "git add <file>.." to update what will be commited.
-2. Use "git checkout -- <file>..." to discard changes in working directory.
+2. Use "git checkout -- <file>..." to discard adding a file to the stage.
 3. Use "git reset HEAD <file>..." to unstage.
 4. Use "git reset --hard HEAD~1" to nuke commit.
 5. Use "git reset HEAD~1" to undo the commit and keep changes.
