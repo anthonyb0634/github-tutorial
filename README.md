@@ -4,6 +4,9 @@ _by Anthony Baez_
 
 ---
 ### Git vs. GitHub
+
+Git is a revision system, a tool to manage your code history. GitHub is a workspace for Git repositories. They are not the same thing but Git is the tool, GitHub is the workspace for projects that use Git.
+
 #### Git 
 * keeps "snapshots" of your code. ( Instead of making a new file it saves the file ).
 * does not require Github.
@@ -32,6 +35,7 @@ _by Anthony Baez_
   * You can use this [website](www.github.com) to check and interact with your repositorys and changes.
   
 
+
 ---
 ### Initial Setup
 1. If you are BRAND NEW to git and git hub start here! If you already have an account and can sign in start at 3
@@ -51,49 +55,54 @@ _by Anthony Baez_
 Follow the following directions
 
 Lets Setup your SSH key!
-* [Click Here](www.github.com) and sign in.
-* Click on the profile icon ( top right ).
-* Settings 
-* SSH and GPG ( left side bar ).
-* New SSH key.
-* TITLE : cloud9 ( recommended not to use caps ).
-* Switch to your cloud9 tab
-* gear icon ( top right ).
-* SSH key tab 
-* copy/paste the 2nd SSH key to github
+1. [Click Here](www.github.com) and sign in.
+2. Click on the profile icon ( top right ).
+3. Settings 
+4. SSH and GPG ( left side bar ).
+5. New SSH key.
+6. TITLE : cloud9 ( recommended not to use caps ).
+7. Switch to your cloud9 ta
+8. gear icon ( top right ).
+9. SSH key tab 
+10. copy/paste the 2nd SSH key to github
   * starts with ssh-rsa
   * add SSH key
-* Go to cloud9
-* Open github-learning ide
-* type in `ssh -T git@github.com`
-* You should see `Hi <your username>! You've successfully authenticated, but GitHub does not provide shell access._
+11. Go to cloud9
+12. Open github-learning ide
+13. type in `ssh -T git@github.com`
+
+You should see `Hi <your username>! You've successfully authenticated, but GitHub does not provide shell access._
 `
 ---
 ### Repository Setup
 Lets make our `first-repo`
-follow the instructions 
-* `cd ~/workspace` ( Always want to cd into workspace so you know where you are )
-* `mkdir first-repo` ( Notice how there are no spaces but instead a dash "-")
-* `cd first-repo` ( Always remember **cd into a file after you make it** )
-* `git init` ( **know where you are before git init** )
+
+**Follow the instructions**
+1. `cd ~/workspace` ( Always want to cd into workspace so you know where you are )
+2. `mkdir first-repo` ( Notice how there are no spaces but instead a dash "-")
+3. `cd first-repo` ( Always remember **cd into a file after you make it** )
+4. `git init` ( **know where you are before git init** )
+
 GREAT!
+
 We now need a remote to push to 
-follow the instructions
-* [Click here](github.com)
-* click on the top right plus icon and create a new repository
-* Repository Name : first-repo
+
+**Follow the instructions**
+1. [Click here](github.com)
+2. click on the top right plus icon and create a new repository
+3. Repository Name : first-repo
   * THE NAMES ALWAYS NEED TO MATCH!
-* Create Repository 
-* Scroll down to 
+4. Create Repository 
+5. Scroll down to 
 
 Lets make a README now!
-follow the instructions
-* `touch README.md`
-* open the README
-* add `this is my first repo`
-* save ( command + s )
-* add 
-* commit -m "create README"
+**Follow the instructions**
+1. `touch README.md`
+2. open the README
+3. add `this is my first repo`
+4. save ( command + s )
+5. add 
+6. commit -m "create README"
 
 
 
@@ -116,15 +125,9 @@ follow the instructions
 ---
 ### Rolling Back Changes
 Messed up adding commiting or pushing?
-1. Use "git checkout -- filename" to undo an edit
-2. Use "git reset HEAD filename" 
-3. Use "git reset HEAD filename"
-4. Use "git reset --soft HEAD~1" to undo a commit
-5. Use "git reset --hard HEAD~1"
----
 1. Use "git add <file>.." to update what will be commited.
 2. Use "git checkout -- <file>..." to discard adding a file to the stage.
 3. Use "git reset HEAD <file>..." to unstage.
-4. Use "git reset --hard HEAD~1" to nuke commit.
+4. Use "git reset --hard HEAD~1" to nuke the commit.
 5. Use "git reset HEAD~1" to undo the commit and keep changes.
 6. Use "git reset --soft HEAD~1" to undo your commit but leave your files
