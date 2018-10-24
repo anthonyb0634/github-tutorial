@@ -51,80 +51,80 @@ _by Anthony Baez_
 Follow the following directions
 
 Lets Setup your SSH key!
-1. [Click Here](www.github.com) and sign in.
-2. Click on the profile icon ( top right ).
-3. Settings 
-4. SSH and GPG ( left side bar ).
-5. New SSH key.
-6. TITLE : cloud9 ( recommended not to use caps ).
-7. Switch to your cloud9 tab
-8. gear icon ( top right ).
-9. SSH key tab 
-10. copy/paste the 2nd SSH key to github
+* [Click Here](www.github.com) and sign in.
+* Click on the profile icon ( top right ).
+* Settings 
+* SSH and GPG ( left side bar ).
+* New SSH key.
+* TITLE : cloud9 ( recommended not to use caps ).
+* Switch to your cloud9 tab
+* gear icon ( top right ).
+* SSH key tab 
+* copy/paste the 2nd SSH key to github
   * starts with ssh-rsa
   * add SSH key
-11. Go to cloud9
-12. Open github-learning ide
-13. type in `ssh -T git@github.com`
-14. You should see `Hi <your username>! You've successfully authenticated, but GitHub does not provide shell access.`  
+* Go to cloud9
+* Open github-learning ide
+* type in `ssh -T git@github.com`
+* You should see `Hi <your username>! You've successfully authenticated, but GitHub does not provide shell access._
 `
 ---
 ### Repository Setup
 Lets make our `first-repo`
 follow the instructions 
-1. `cd ~/workspace` ( Always want to cd into workspace so you know where you are )
-2. `mkdir first-repo` ( Notice how there are no spaces but instead a dash "-")
-3. `cd first-repo` ( Always remember **cd into a file after you make it** )
-4. `git init` ( **know where you are before git init** )  
-GREAT!  
-We now need a remote to push to
-follow the instructions  
-1. [Click here](github.com)
-2. click on the top right plus icon and create a new repository
-3. Repository Name : first-repo
+* `cd ~/workspace` ( Always want to cd into workspace so you know where you are )
+* `mkdir first-repo` ( Notice how there are no spaces but instead a dash "-")
+* `cd first-repo` ( Always remember **cd into a file after you make it** )
+* `git init` ( **know where you are before git init** )
+GREAT!
+We now need a remote to push to 
+follow the instructions
+* [Click here](github.com)
+* click on the top right plus icon and create a new repository
+* Repository Name : first-repo
   * THE NAMES ALWAYS NEED TO MATCH!
-4. Create Repository 
-5. Scroll down to 
+* Create Repository 
+* Scroll down to 
 
 Lets make a README now!
 follow the instructions
-1. `touch README.md`
-2. open the README
-3. add `this is my first repo`
-4. save ( command + s )
-5. add 
-6. commit -m "create README"
+* `touch README.md`
+* open the README
+* add `this is my first repo`
+* save ( command + s )
+* add 
+* commit -m "create README"
 
 
 
 ---
 ### Workflow & Commands
 ##### Vocabulary 
-* **git**: a git command
-* **git init** // initializes git in our directory for version control -- **only do this once at the beginning and know where you are.**
-* **git add file.ext** // add the file(s) to the stage to be committed (_note: git add . adds the current/entire directory: all files that have changes_) will not add any deleted or rename files
+1. **git**: a git command
+2. **git init** // initializes git in our directory for version control -- **only do this once at the beginning and know where you are.**
+3. **git add file.ext** // add the file(s) to the stage to be committed (_note: git add . adds the current/entire directory: all files that have changes_) will not add any deleted or rename files
 (note: **git add --all  includes ALL changes, including deleted files**)
-* **git status** // optional **(recommended!)** command to see which files on the stage are ready to committed (_they will be green if ready if not ready then it will be red_).
-* **git commit -m "short/specific message"** // takes a ‘snapshot’ of the files on the stage. The message should be present-tense and short and simple Example: ("Complete first repo")
-* **remote**: we are setting up a connection between our current repository and an external one (that lives on github)
-* **add**: we are adding the remote repo (as opposed to editing or removing an existing one)
-* **origin**: this is our “nickname” for the remote repo.  “origin” is standard.  In the future, you might need multiple remotes.
-* **URL**: the location of the remote repo.  (Could be HTTPS or SSH). Recomended that user uses SSH, since HTTPS requires a constant log in after pushing a file.
-* **pull**: bring any changes from the remote repo down to the local repo
-* **push**: we are sending our commits from our local repo to our remote repo (up to the cloud: Github)
-* **-u**: means “upstream.” This tells git to remember which remote repo & branch to push our changes to when we type git push in the future.
+4. **git status** // optional **(recommended!)** command to see which files on the stage are ready to committed (_they will be green if ready if not ready then it will be red_).
+5. **git commit -m "short/specific message"** // takes a ‘snapshot’ of the files on the stage. The message should be present-tense and short and simple Example: ("Complete first repo")
+6. **remote**: we are setting up a connection between our current repository and an external one (that lives on github)
+7. **add**: we are adding the remote repo (as opposed to editing or removing an existing one)
+8. **origin**: this is our “nickname” for the remote repo.  “origin” is standard.  In the future, you might need multiple remotes.
+9. **URL**: the location of the remote repo.  (Could be HTTPS or SSH). Recomended that user uses SSH, since HTTPS requires a constant log in after pushing a file.
+10. **pull**: bring any changes from the remote repo down to the local repo
+11. **push**: we are sending our commits from our local repo to our remote repo (up to the cloud: Github)
+12. **-u**: means “upstream.” This tells git to remember which remote repo & branch to push our changes to when we type git push in the future.
 ---
 ### Rolling Back Changes
 Messed up adding commiting or pushing?
-* Use "git checkout -- filename" to undo an edit
-* Use "git reset HEAD filename" 
-* Use "git reset HEAD filename"
-* Use "git reset --soft HEAD~1" to undo a commit
-* Use "git reset --hard HEAD~1"
+1. Use "git checkout -- filename" to undo an edit
+2. Use "git reset HEAD filename" 
+3. Use "git reset HEAD filename"
+4. Use "git reset --soft HEAD~1" to undo a commit
+5. Use "git reset --hard HEAD~1"
 ---
-* Use "git add <file>.." to update what will be commited.
-* Use "git checkout -- <file>..." to discard adding a file to the stage.
-* Use "git reset HEAD <file>..." to unstage.
-* Use "git reset --hard HEAD~1" to nuke commit.
-* Use "git reset HEAD~1" to undo the commit and keep changes.
-* Use "git reset --soft HEAD~1" to undo your commit but leave your files
+1. Use "git add <file>.." to update what will be commited.
+2. Use "git checkout -- <file>..." to discard adding a file to the stage.
+3. Use "git reset HEAD <file>..." to unstage.
+4. Use "git reset --hard HEAD~1" to nuke commit.
+5. Use "git reset HEAD~1" to undo the commit and keep changes.
+6. Use "git reset --soft HEAD~1" to undo your commit but leave your files
