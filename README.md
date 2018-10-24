@@ -52,9 +52,9 @@ Git is a revision system, a tool to manage your code history. GitHub is a worksp
 
 ---
 
-Follow the following directions
-
 Lets Setup your SSH key!
+**Follow the directions**
+
 1. [Click Here](www.github.com) and sign in.
 2. Click on the profile icon ( top right ).
 3. Settings 
@@ -74,25 +74,16 @@ Lets Setup your SSH key!
 ---
 ### Repository Setup
 Lets make our `first-repo`
-
-
 **Follow the instructions**
 1. `cd ~/workspace` ( Always want to cd into workspace so you know where you are )
 2. `mkdir first-repo` ( Notice how there are no spaces but instead a dash "-")
 3. `cd first-repo` ( Always remember **cd into a file after you make it** )
 4. `git init` ( **know where you are before git init** )
 
-GREAT!
-We now need a remote to push to 
-**Follow the instructions**
-=======
-follow the instructions 
-1. `cd ~/workspace` ( Always want to cd into workspace so you know where you are )
-2. `mkdir first-repo` ( Notice how there are no spaces but instead a dash "-")
-3. `cd first-repo` ( Always remember **cd into a file after you make it** )
-4. `git init` ( **know where you are before git init** )  
 GREAT!  
+
 We now need a remote to push to
+
 **Follow the instructions ** 
 1. [Click here](github.com)
 2. click on the top right plus icon and create a new repository
@@ -104,7 +95,7 @@ We now need a remote to push to
 Lets make a README now!
 
 **Follow the instructions**
-=======
+
 follow the instructions
 2. open the README
 3. add `this is my first repo`
