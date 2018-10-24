@@ -131,3 +131,30 @@ Messed up adding commiting or pushing?
 4. Use "git reset --hard HEAD~1" to nuke the commit.
 5. Use "git reset HEAD~1" to undo the commit and keep changes.
 6. Use "git reset --soft HEAD~1" to undo your commit but leave your files
+
+---
+
+### Collaberation
+With collaboration you can clone or fork repositories.
+
+**Clone**
+
+Cloning is you getting a copy of a repository!
+
+How to clone!
+1. Go to the wanted repository/ies 
+2. Click the green button `clone or download`
+3. Click clone with SSH
+4. Click the copy button next to the link.
+5. `cd workspace`
+6. `git clone <link>`
+
+**Fork**
+
+Forking is you making your own copy of a repository!
+
+How to fork!
+1. Go to the repository/ies you want to fork.
+2. Click the fork button on the top right.
+3. Once you fork check to see if your username replaced theirs 
+4. Now you git clone `<link>`.
